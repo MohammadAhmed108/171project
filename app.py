@@ -4,7 +4,7 @@ import numpy as np
 import keras
 
 app = Flask(__name__)
-model = keras.models.load_model('SA_Trained_Model.keras')  # Load your model
+model = keras.models.load_model('OPT_LSTM_model.keras')  # Load  model
 
 @app.route('/')
 def home():
