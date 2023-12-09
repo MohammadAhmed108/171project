@@ -23,7 +23,7 @@ with open('vocabulary_tokenizer.json', 'r') as f:
 tokenizer = keras.preprocessing.text.tokenizer_from_json(tokenizer_config)
 
 # Load the model
-model_path = 'SA_Trained_Model.h5'
+model_path = 'OPT_LSTM_model.h5'
 try:
     model = keras.models.load_model(model_path)
     app.logger.info("Model loaded successfully.")
